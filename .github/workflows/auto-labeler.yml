@@ -1,7 +1,5 @@
 name: AnVIL label
-on: [issues]
-defaults:
-  types: [opened, edited]
+on: [issues] 
 
 jobs:
   triage:
