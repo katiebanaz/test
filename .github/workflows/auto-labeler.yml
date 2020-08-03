@@ -17,12 +17,12 @@ enable:
   
 labels: 
   'AnVIL':
-    include: '\bAnVIL?\b'
-   'KidsFirst':
-    include: '\bKids First?\b'
-    'CRDC':
-    include: '\bCRDC?\b'
-    'NHLBI':
-    inlclude:'\bNHLBI?\b'
-     'dbGaP':
-     include:'\bdbGaP?\b'
+  include: '\bAnVIL?\b'
+  'KidsFirst':
+  include: '\bKids?\b'
+  'CRDC':
+  include: '\bCRDC?\b'
+  'NHLBI':
+  include: '\bNHLBI?\b'
+  'dbGaP':
+  include: '\bdbGaP?\b'
