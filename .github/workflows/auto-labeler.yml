@@ -10,7 +10,7 @@ jobs:
     - uses: github/issue-labeler@v2.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        configuration-path: .github/workflows/auto-labeler.yml
+        configuration-path: test/.github/workflows/auto-labeler.yml
         :  
 
 enable: 
