@@ -1,0 +1,35 @@
+name: AnVIL label
+on: [issues]
+defaults:
+  types: [opened, edited]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: github/issue-labeler@v2.0
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        configuration-path: .github/labeler.yml
+        :  
+
+enable: 
+  issues: true 
+  
+labels:
+  'AnVIL':
+  include:
+  - '\bAnVIL?\b'
+   'Kids First':
+   include: 
+   - '\bKids First?\b'
+    'CRDC':
+    include: 
+    - '\bCRDC?\b'
+    'NHLBI':
+    inlclude:
+    -'\bNHLBI?\b'
+     'dbGaP':
+     include:
+     -'\bdbGaP?\b'
+      
