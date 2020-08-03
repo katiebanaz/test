@@ -15,20 +15,14 @@ jobs:
 enable: 
   issues: true 
   
-labels:
+labels: 
   'AnVIL':
-  include:
-  - '\bAnVIL?\b'
-   'Kids First':
-   include: 
-   - '\bKids First?\b'
+    include: '\bAnVIL?\b'
+   'KidsFirst':
+    include: '\bKids First?\b'
     'CRDC':
-    include: 
-    - '\bCRDC?\b'
+    include: '\bCRDC?\b'
     'NHLBI':
-    inlclude:
-    -'\bNHLBI?\b'
+    inlclude:'\bNHLBI?\b'
      'dbGaP':
-     include:
-     -'\bdbGaP?\b'
-      
+     include:'\bdbGaP?\b'
