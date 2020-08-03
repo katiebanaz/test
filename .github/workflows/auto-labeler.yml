@@ -1,5 +1,5 @@
 name: AnVIL label
-on: [issues] 
+on: [issues]
 
 jobs:
   triage:
