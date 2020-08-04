@@ -2,7 +2,7 @@ name: Close issues with label
 
 on:
   schedule:
-  - cron: 0 5 * * 3 
+  - cron: 0 * * * *
 name: Weekly Issue Closure
 jobs:
   cycle-weekly-close:
