@@ -1,14 +1,14 @@
-name: AnVIL label
-on: [issues]
-
+name: Labeling new issue
+on:
+  issues:
+      types: ['opened']
 jobs:
-  triage:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: github/issue-labeler@v2.0
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        configuration-path: test/.github/workflows/auto-labeler.yml
+      - uses: Renato66/auto-label@v2 # or v2.1.3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 enable: 
   issues: true 
