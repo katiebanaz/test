@@ -1,6 +1,6 @@
 on:
   schedule:
-  - cron: */15 * * * *
+  - cron: 15 * * * *
 name: Hourly Issue Closure
 jobs:
   cycle-hourly-close:
