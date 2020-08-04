@@ -12,5 +12,5 @@ jobs:
     - name: weekly-issue-closure
       uses: bdougie/close-issues-based-on-label@master
       env:
-        LABEL: Model: Not moving forward
+        LABEL: notmovingforward
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
