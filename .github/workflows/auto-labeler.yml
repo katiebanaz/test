@@ -1,4 +1,4 @@
-name: Labeling new issue
+name: Labeling new issue AnVIL
 on:
   issues:
       types: ['opened']
@@ -10,17 +10,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-enable: 
-  issues: true 
-  
-labels: 
-  'AnVIL':
-  include: '\bAnVIL?\b'
-  'KidsFirst':
-  include: '\bKids?\b'
-  'CRDC':
-  include: '\bCRDC?\b'
-  'NHLBI':
-  include: '\bNHLBI?\b'
-  'dbGaP':
-  include: '\bdbGaP?\b'
+defaults: '{"AnVIL:["anvil"]}'
